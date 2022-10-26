@@ -1,0 +1,148 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+**::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class]{
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/*--------------Rating*/
+
+body{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: #FFFFFF;
+    background-color: #141519;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, #171e28, #1a212b, #1d242e, #202731, #232a34);
+}
+
+.logo__container{
+    height: 54px;
+    width: 54px;
+    border-radius: 27px;
+    background-color: #262f38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50%;
+    width: 50%;
+}
+
+.rating__header {
+    margin-top: 40px;
+}
+
+.rating__text {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 30px;
+    max-width: 340px;
+}
+
+.rating__btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 54px;
+    width: 54px;
+    border-radius: 27px;
+    background-color: #262f38;
+    color: white;
+    border: none;
+    font-weight: 700;
+    transition: all ease .4s;
+}
+
+.rating__btn--inactive:hover{
+    background-color: hsl(216, 12%, 54%);
+}
+
+.rating__btn--active{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit {
+    height: 50px;
+    width: 100%;
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all ease .6s;
+}
+.submit:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
